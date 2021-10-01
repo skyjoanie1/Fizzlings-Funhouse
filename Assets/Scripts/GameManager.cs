@@ -25,9 +25,6 @@ public class GameManager : Singleton<GameManager>
     //Variable to handle the number of seagulls in the Turtle Rescue scene
     public int numSeagulls = 0;
 
-    //Variable to handle the number of Notes in the Music and Rhythm room minigame
-    public int numNotes = 0;
-
 
     //Override the Awake function from Singleton
     protected override void Awake()
