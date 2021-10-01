@@ -8,6 +8,7 @@ TagManager:
   - Turtle
   - Seagull
   - PiantedWorldChair
+  - DrawSelector
   layers:
   - Default
   - TransparentFX
