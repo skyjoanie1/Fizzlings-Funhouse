@@ -11,8 +11,9 @@ public class SpawnNotes : MonoBehaviour
     private GameObject notePrefab3;
     private GameObject notePrefab4;
 
+    //Where to store the list of notes
     public GameObject[] notes = new GameObject[] { };
-
+    //Where to hold the list of note spawners
     public GameObject[] noteSpawners = new GameObject[] { };
 
     // Start is called before the first frame update
@@ -23,9 +24,10 @@ public class SpawnNotes : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   //If the number of notes is less than 2
         if (GameManager.Instance.numNotes < 2)
         {
+            //Spawn a note from one of the note spawners
             Debug.Log("Spawned a note");
             SpawnNote();
         }

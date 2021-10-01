@@ -27,6 +27,7 @@ public class NoteMove : MonoBehaviour
 
     public void Movement()
     {
+        Debug.Log("Movement called");
         //If the tutorial is active, move the tutorial note by setting tutorialMove to true
         //and adjust its transformation accordingly
         if (tutorial == true)
