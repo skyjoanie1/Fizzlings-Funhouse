@@ -57,7 +57,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Music Room.unity
     guid: 294e668d359f6fc4a9f68e64aac9da31
   - enabled: 1
-    path: Assets/Scenes/Musical Performance.unity
+    path: Assets/Scenes/Music Rythym Minigame.unity
     guid: 227ded857bd00064bb754d136ac50932
   - enabled: 1
     path: Assets/Scenes/Library.unity
