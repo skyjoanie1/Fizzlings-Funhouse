@@ -29,6 +29,12 @@ public class MoveRooms : MonoBehaviour
         SceneManager.LoadScene("Painted World");
     }
 
+    //Function called when player clicks the Painting minigame button
+    public void GoToPaintingMinigame()
+    {
+        SceneManager.LoadScene("Painting Minigame");
+    }
+
     //Function called when player clicks the Zoo Button
     public void GoToZoo()
     {
@@ -75,6 +81,12 @@ public class MoveRooms : MonoBehaviour
     public void GoToRhythmGame()
     {
         SceneManager.LoadScene("Musical Performance");
+    }
+
+    //Function called when the player clicks the Dance Legends game button
+    public void GoToDanceLegendsGame()
+    {
+        SceneManager.LoadScene("DanceLegends");
     }
 
     //Function called when player clicks the Library Button
