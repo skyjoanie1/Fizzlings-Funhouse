@@ -1342,7 +1342,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1280461659}
         m_MethodName: GoToSharkEscapeGame
         m_Mode: 1
         m_Arguments:
@@ -2435,8 +2435,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.84, y: 9.08}
+  m_Offset: {x: 0.058619477, y: -0.1758534}
+  m_Size: {x: 3.0814486, y: 8.259345}
   m_Direction: 0
 --- !u!212 &1727152640
 SpriteRenderer:

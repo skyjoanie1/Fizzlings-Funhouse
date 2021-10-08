@@ -27,7 +27,7 @@ public class WallGenerator : MonoBehaviour
         {
             //Spawn a wall set and destroy it after a set time
             GameObject wall = Instantiate(walls, new Vector2(walls.transform.position.x, walls.transform.position.y + Random.Range(-2, 2)), walls.transform.rotation);
-            Destroy(wall, 10);
+            Destroy(wall, 15);
 
             //Reset timer
             lastEventTime = Time.time;

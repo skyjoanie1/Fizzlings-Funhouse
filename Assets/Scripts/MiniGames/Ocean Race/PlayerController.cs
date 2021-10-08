@@ -19,12 +19,13 @@ public class PlayerController : MonoBehaviour
     int score = 0;
 
     //Variable to check if the player is dead or not
-    bool dead = false;
+    public bool dead;
 
     // Start is called before the first frame update
     void Start()
     {
         marabelle = transform.GetComponent<Rigidbody2D>();
+        dead = false;
     }
 
     // Update is called once per frame
