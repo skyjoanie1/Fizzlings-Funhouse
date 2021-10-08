@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8525829478607809511}
   m_Layer: 0
   m_Name: Brobrush
-  m_TagString: Untagged
+  m_TagString: brush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

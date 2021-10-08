@@ -9,10 +9,12 @@ public class DrawSelector : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerExit(PointerEventData eventData)
     {
         Mouse.Selecting = false;
+        
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        //figure out a way to not deselect brush
             Mouse.Selecting = true;
             Mouse.redBrushActive = false;
             Mouse.greenBrushActive = false;
@@ -23,5 +25,8 @@ public class DrawSelector : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
             Mouse.blueBrushActive = false;
             Mouse.brownBrushActive = false;
             Mouse.blackBrushActive = false;
+            Mouse.eraseBrushActive = false;
     }
+
+
 }

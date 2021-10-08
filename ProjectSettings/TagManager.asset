@@ -9,6 +9,7 @@ TagManager:
   - Seagull
   - PiantedWorldChair
   - DrawSelector
+  - brush
   layers:
   - Default
   - TransparentFX

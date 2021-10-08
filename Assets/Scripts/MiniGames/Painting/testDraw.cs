@@ -17,6 +17,7 @@ public class testDraw : MonoBehaviour
     public GameObject blubrush;
     public GameObject brobrush;
     public GameObject blabrush;
+    public GameObject eraseBrush;
     //calls the line to draw
     LineRenderer currentLineRenderer;
     //gets the postion of the mouse 
@@ -33,7 +34,7 @@ public class testDraw : MonoBehaviour
     public bool brownBrushActive;
     public bool blackBrushActive;
     public bool Selecting;
-
+    public bool eraseBrushActive;
 
   //will create the brush allowing you to draw
     public void CreateBrush()
@@ -46,15 +47,6 @@ public class testDraw : MonoBehaviour
             currentLineRenderer.SetPosition(0, mousePos);
             currentLineRenderer.SetPosition(1, mousePos);
         }
-        //if the greenbrush is not active do nothing
-       //if (greenBrushActive == false)
-       // {
-       //     GameObject brushInstance = Instantiate(brush);
-       //     currentLineRenderer = brushInstance.GetComponent<LineRenderer>();
-       //     mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
-       //     currentLineRenderer.SetPosition(0, mousePos);
-       //     currentLineRenderer.SetPosition(1, mousePos);
-       // } 
         // if the green brush is selected start drawing 
          if (greenBrushActive == true)
         {
@@ -152,9 +144,40 @@ public class testDraw : MonoBehaviour
             currentLineRenderer.SetPosition(0, mousePos);
             currentLineRenderer.SetPosition(1, mousePos);
         }
+        //erases tge brushes in the game.
+        if (eraseBrushActive == true)
+        {
+            //creates the brush
+            GameObject brushInstance = Instantiate(eraseBrush);
+            //gets the line render compoenenet and ties it with the current postion of the line
+            currentLineRenderer = brushInstance.GetComponent<LineRenderer>();
+            //gets the postion of the mouse on screen and allows the line to be drawn
+            mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+            currentLineRenderer.SetPosition(0, mousePos);
+            currentLineRenderer.SetPosition(1, mousePos);
+
+        }
+
+
     }
+    public void erasedBrush()
+    {
+        if (eraseBrushActive == true)
+        {
+            //creates the brush
+            GameObject brushInstance = Instantiate(eraseBrush);
+            //gets the line render compoenenet and ties it with the current postion of the line
+            currentLineRenderer = brushInstance.GetComponent<LineRenderer>();
+            //gets the postion of the mouse on screen and allows the line to be drawn
+            mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+            currentLineRenderer.SetPosition(0, mousePos);
+            currentLineRenderer.SetPosition(1, mousePos);
+            
+        }
+    }
+
     //allows the line render to draw
-   private void Draw()
+   public void Draw()
     {
         //if you click the mouse button it will call the create brush function 
         if (Input.GetKeyDown(KeyCode.Mouse0) && Selecting != true)
@@ -170,6 +193,7 @@ public class testDraw : MonoBehaviour
             {
                 AddAPoint(mousePos);
                 lastPos = mousePos;
+                
             }
            
         }
@@ -179,6 +203,7 @@ public class testDraw : MonoBehaviour
         }
 
     }
+
     public void GreenBrush()
     {
             greenBrushActive = true;
@@ -216,6 +241,11 @@ public class testDraw : MonoBehaviour
         blackBrushActive = true;
     }
 
+    public void EraseBrush()
+    {
+        eraseBrushActive = true;
+    }
+
     // it will get the point of the mouse and when you click on the screen create the line
     void AddAPoint(Vector2 pointPos)
     {
@@ -226,14 +256,14 @@ public class testDraw : MonoBehaviour
         // gets the postion and of the line and where the mouse is. 
         currentLineRenderer.SetPosition(positionIndex, pointPos);
     }
+
     private void Update()
     {
         //will only draw if you press the mosue button
         if(Input.GetMouseButton(0))
         {
-            
             Draw();
-        }
+        } 
     }
 
     
