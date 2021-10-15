@@ -6,7 +6,6 @@ public class SpawnNoteExperiment : MonoBehaviour
 {
     public GameObject note;
 
-    private Transform[] spawnPoints;
 
     public float maxTime = 10;
 
@@ -16,25 +15,33 @@ public class SpawnNoteExperiment : MonoBehaviour
 
     private float spawnTime;
 
-    private void Awake()
-    {
-        List<Transform> spawningPointsAsList = new List<Transform>();
-
-        foreach(Transform child in transform)
-        {
-            spawningPointsAsList.Add(child);
-        }
-        spawnPoints = spawningPointsAsList.ToArray();
-    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        SetRandomTime();
+        time = minTime;
+    }
+
+    void SetRandomTime()
+    {
+        spawnTime = Random.Range(minTime, maxTime);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        time += Time.deltaTime;
+        if(time >= spawnTime)
+        {
+            SpawnObject();
+            SetRandomTime();
+        }
+    }
+
+
+    void SpawnObject()
+    {
+        time = 0;
+        Instantiate(note, transform.position, note.transform.rotation);
     }
 }
