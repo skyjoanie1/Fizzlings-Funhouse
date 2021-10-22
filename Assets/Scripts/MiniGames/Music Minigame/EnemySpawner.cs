@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-
+    public GameObject button;
     public GameObject[] enemiesList;
     float randX;
     Vector2 whereToSpawn;
@@ -14,14 +14,14 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(Time.time > nextSpawn)
+        if (Time.time > nextSpawn && Time.timeScale == 1)
         {
             int randomNum = Random.Range(0, 5);
             nextSpawn = Time.time + spawnRate;
@@ -35,6 +35,17 @@ public class EnemySpawner : MonoBehaviour
       
 
         
+
+    }
+
+    public void OnButtonClick()
+    {
+
+        Time.timeScale = 1;
+        Debug.Log("Time");
+
+
+
 
     }
 }
