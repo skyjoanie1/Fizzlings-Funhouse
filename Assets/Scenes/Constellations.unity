@@ -320,10 +320,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63560127a856fb4f90946194153b035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dotPrefab: {fileID: 0}
+  penCanvas: {fileID: 1314085874}
+  dotPrefab: {fileID: 6682708768448810459, guid: 0356ca0dae830a7489d91c4e4bd29f31,
+    type: 3}
   dotParent: {fileID: 1301531652}
-  linePrefab: {fileID: 0}
-  lineParentl: {fileID: 1172088846}
+  linePrefab: {fileID: 594958779709893268, guid: 70e6f37f6062b2348aa198d356828d73,
+    type: 3}
+  lineParent: {fileID: 1172088846}
+  activeColor: {r: 0.8679245, g: 0.8497848, b: 0.29067284, a: 0}
+  normalColor: {r: 1, g: 0.9669811, b: 0.9669811, a: 0}
+  loopToggle: {fileID: 989144335}
+  loopSprite: {fileID: 21300000, guid: 744dbc48577e8fa418ede640db46a362, type: 3}
+  unloopSprite: {fileID: 21300000, guid: b2eff7c3e72e4b245b32c09441f0e49a, type: 3}
 --- !u!114 &386750428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,9 +1003,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 894300844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc3a842e8d82f504b8d1e2b380cd2244, type: 3}
+  m_Script: {fileID: 11500000, guid: 134fdc11ccff06248888a3f3314c5f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
+  star: {fileID: 0}
 --- !u!1 &894560182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,8 +1166,9 @@ GameObject:
   - component: {fileID: 989144334}
   - component: {fileID: 989144336}
   - component: {fileID: 989144335}
+  - component: {fileID: 989144337}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Loop Toogle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1201,7 +1212,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 419a46eb355a35247b87d030fc014258, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1219,6 +1230,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989144333}
   m_CullTransparentMesh: 0
+--- !u!114 &989144337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989144333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 989144335}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 386750427}
+        m_MethodName: ToggleLoop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1135449325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,6 +1796,7 @@ GameObject:
   - component: {fileID: 1314085871}
   - component: {fileID: 1314085873}
   - component: {fileID: 1314085872}
+  - component: {fileID: 1314085874}
   m_Layer: 0
   m_Name: PenCanvas
   m_TagString: Untagged
@@ -1795,6 +1861,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314085870}
   m_CullTransparentMesh: 0
+--- !u!114 &1314085874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314085870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e3dacf841c6604686705f92cca4711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1449824696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,9 +2532,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2096427931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc3a842e8d82f504b8d1e2b380cd2244, type: 3}
+  m_Script: {fileID: 11500000, guid: 134fdc11ccff06248888a3f3314c5f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
+  star: {fileID: 0}
 --- !u!1 &2128600328
 GameObject:
   m_ObjectHideFlags: 0
