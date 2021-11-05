@@ -10,6 +10,11 @@ public class MoveRooms : MonoBehaviour
     {
         SceneManager.LoadScene("Garage");
     }
+    public void GoToToolOrganizer()
+    {
+        SceneManager.LoadScene("Tool-Organizer");
+       
+    }
 
     //Function called when player clicks the Hangar Button
     public void GoToHangar()

@@ -24,7 +24,9 @@ public class GameManager : Singleton<GameManager>
 
     //Variable to handle the number of seagulls in the Turtle Rescue scene
     public int numSeagulls = 0;
-
+    //tool organizer game
+    //variable to tell the total numnber of tools placed
+    public int ToolsTotalPoints = 0;
 
     //Override the Awake function from Singleton
     protected override void Awake()
