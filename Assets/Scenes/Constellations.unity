@@ -171,21 +171,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 386750425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63560127a856fb4f90946194153b035, type: 3}
+  m_Script: {fileID: 11500000, guid: 65634bf8a41a2244f9dcb2493c4f8f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   penCanvas: {fileID: 1314085874}
-  dotPrefab: {fileID: 6682708768448810459, guid: 0356ca0dae830a7489d91c4e4bd29f31,
+  dotPrefab: {fileID: 6682708768448810459, guid: d2a04c6808abae745b3446b738d1b58b,
     type: 3}
   dotParent: {fileID: 1301531652}
-  linePrefab: {fileID: 594958779709893268, guid: 70e6f37f6062b2348aa198d356828d73,
+  linePrefab: {fileID: 594958779709893268, guid: 86180971b07544e4981ac0e7d27dc4df,
     type: 3}
   lineParent: {fileID: 1172088846}
-  activeColor: {r: 0.0521983, g: 0.6509434, b: 0.12790765, a: 1}
-  normalColor: {r: 1, g: 0.9669811, b: 0.9669811, a: 0}
+  activeColor: {r: 1, g: 0.96754205, b: 0, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 0}
   loopToggle: {fileID: 989144335}
-  loopSprite: {fileID: 21300000, guid: 744dbc48577e8fa418ede640db46a362, type: 3}
-  unloopSprite: {fileID: 21300000, guid: b2eff7c3e72e4b245b32c09441f0e49a, type: 3}
+  loopSprite: {fileID: 21300000, guid: a881f0d140bb164438e763aeba96fa3f, type: 3}
+  unloopSprite: {fileID: 21300000, guid: 6ee2caa26512b744baa5149da1b1682f, type: 3}
 --- !u!114 &386750428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8ccf0e10b8c619748baa03ab350925fc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 767b002136964504e84e426b15cc99e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -507,7 +507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 53}
+  m_AnchoredPosition: {x: -13, y: 61}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &989144335
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 744dbc48577e8fa418ede640db46a362, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a881f0d140bb164438e763aeba96fa3f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -815,7 +815,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1314085870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91e3dacf841c6604686705f92cca4711, type: 3}
+  m_Script: {fileID: 11500000, guid: ba8b43c47ead9c246acc0f8993e233bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1390388713
@@ -852,7 +852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -62.845184}
+  m_AnchoredPosition: {x: 28, y: -86}
   m_SizeDelta: {x: 239.7826, y: 59.020218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390388715
@@ -952,7 +952,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b364443e2b632004b9163c9e0a4ccec5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5130f7a3005352946809dcce9e2359cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1033,7 +1033,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 67b1927760e34474da1f183bb04ec56b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3bc1c65c380a89b47b8b748f4d9d07be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
