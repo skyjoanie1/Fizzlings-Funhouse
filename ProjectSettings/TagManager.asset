@@ -9,6 +9,13 @@ TagManager:
   - Seagull
   - PiantedWorldChair
   - DrawSelector
+  - Hammer
+  - Wrench
+  - Flashlight
+  - DuctTape
+  - SafetyGlasses
+  - ScrewDriver
+  - TapeMeasure
   layers:
   - Default
   - TransparentFX
