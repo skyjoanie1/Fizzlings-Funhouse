@@ -18,8 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Garage.unity
     guid: 005af50feec855f44ac39bdc426c2c9a
   - enabled: 1
+    path: Assets/Scenes/Tool-Organizer.unity
+    guid: 829131d2a73be4345847a9e366b3b049
+  - enabled: 1
+    path: Assets/Scenes/CCScenes/CoinCollector.unity
+    guid: 83942d277f673524ba3da598f16f5154
+  - enabled: 1
     path: Assets/Scenes/Hangar.unity
     guid: 3c31b42eb1368bd44920a83e7dcc3668
+  - enabled: 1
+    path: Assets/Scenes/Constellations.unity
+    guid: 382e6a4a3e72abc4f8a1695e25a3bf35
   - enabled: 1
     path: Assets/Scenes/Galactic Diplomacy Minigame.unity
     guid: 72dc621194bb91b43bbcb00c3c880e0a

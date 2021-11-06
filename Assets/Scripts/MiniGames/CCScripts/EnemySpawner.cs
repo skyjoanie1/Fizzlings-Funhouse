@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject button;
-    public GameObject[] enemiesList;
+
+    public GameObject[] spawningList;
     float randX;
     Vector2 whereToSpawn;
     public float spawnRate = 2f;
@@ -14,38 +14,25 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Time.time > nextSpawn && Time.timeScale == 1)
+        if(Time.time > nextSpawn)
         {
-            int randomNum = Random.Range(0, 5);
+            int randomNum = Random.Range(0, 2);
             nextSpawn = Time.time + spawnRate;
-            randX = Random.Range(-7f, 7f);
+            randX = Random.Range(-6f, 6f);
             whereToSpawn = new Vector2(randX, transform.position.y);
-            Instantiate(enemiesList[randomNum], whereToSpawn, Quaternion.identity);
+            Instantiate(spawningList[randomNum], whereToSpawn, Quaternion.identity);
 
 
         }
 
-      
-
         
-
-    }
-
-    public void OnButtonClick()
-    {
-
-        Time.timeScale = 1;
-        Debug.Log("Time");
-
-
-
 
     }
 }
