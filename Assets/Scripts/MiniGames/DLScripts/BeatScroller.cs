@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoteMovement : MonoBehaviour
+public class BeatScroller : MonoBehaviour
 {
     //Controls the speed at which the notes move
     public float beatTempo;

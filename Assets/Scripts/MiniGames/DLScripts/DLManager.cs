@@ -46,7 +46,7 @@ public class DLManager : MonoBehaviour
             {
                 // Start playing the game when any key is pressed
                 startPlaying = true;
-                theBS.hasStarted = true; 
+               // theBS.hasStarted = true; 
                 
 
             }
