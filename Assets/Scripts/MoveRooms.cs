@@ -10,16 +10,31 @@ public class MoveRooms : MonoBehaviour
     {
         SceneManager.LoadScene("Garage");
     }
+
+    //Function called when player clicks on the Tool Organizer Button
     public void GoToToolOrganizer()
     {
         SceneManager.LoadScene("Tool-Organizer");
        
     }
 
+    //Function called when player clicks on the Coin Collector Button
+    public void GoToCoinCollector()
+    {
+        SceneManager.LoadScene("CoinCollector");
+
+    }
+
     //Function called when player clicks the Hangar Button
     public void GoToHangar()
     {
         SceneManager.LoadScene("Hangar");
+    }
+
+    //Function called when player clicks the Constellation button
+    public void GoToConstellation()
+    {
+        SceneManager.LoadScene("Constellations");
     }
 
     //Function called when player clicks the Art Gallery Button
