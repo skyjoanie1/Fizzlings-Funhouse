@@ -31,6 +31,12 @@ public class MoveRooms : MonoBehaviour
         SceneManager.LoadScene("Hangar");
     }
 
+    //Function called when player clicks the Galactic Diplomacy Button
+    public void GoToGalacticDiplomacy()
+    {
+        SceneManager.LoadScene("Galactic Diplomacy Minigame");
+    }
+
     //Function called when player clicks the Constellation button
     public void GoToConstellation()
     {

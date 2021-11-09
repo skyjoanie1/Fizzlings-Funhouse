@@ -72,11 +72,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Music Room.unity
     guid: 294e668d359f6fc4a9f68e64aac9da31
   - enabled: 1
+    path: Assets/Scenes/DanceLegends.unity
+    guid: 44ec9bcf373b8634884707049500f6d9
+  - enabled: 1
     path: Assets/Scenes/Music Rythym Minigame.unity
     guid: 227ded857bd00064bb754d136ac50932
-  - enabled: 1
-    path: Assets/Scenes/DanceLegends.unity
-    guid: 4b2d7a2095715ca47b29e994465def63
   - enabled: 1
     path: Assets/Scenes/Library.unity
     guid: b8b112158df6d9445b2630c84c30bd74

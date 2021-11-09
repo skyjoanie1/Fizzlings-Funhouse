@@ -3,35 +3,47 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DLManager : MonoBehaviour
+public class DLGameManager : MonoBehaviour
 {
 
     public AudioSource theMusic;
     public bool startPlaying;
     public BeatScroller theBS;
 
-    public static DLManager Instance;
+    public static GameManager Instance;
 
     public int currentScore;
+    public int CPUcurrentScore;
     public int scorePerNote = 100;
     public int scorePerGoodNote = 125;
     public int scorePerPerfectNote = 150;
 
     public int currentMultiplier;
     public int multiplierTracker;
+    public int CPUcurrentMultiplier;
+    public int CPUmultiplierTracker;
     public int[] multiplierThresholds;
 
     public Text scoreText;
     public Text multiText;
 
+    public Text CPUscoreText;
+    public Text CPUmultiText;
+
+    public int cpuNum;
+
     // Start is called before the first frame update
     void Start()
     {
- 
-        Instance = this;
+
+        
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
-        
+        CPUscoreText.text = "CPU Score: 0";
+        CPUcurrentMultiplier = 1;
+
+        cpuNum = Random.Range(1, 3);
+
     }
 
     // Update is called once per frame
@@ -46,7 +58,7 @@ public class DLManager : MonoBehaviour
             {
                 // Start playing the game when any key is pressed
                 startPlaying = true;
-               // theBS.hasStarted = true; 
+                theBS.hasStarted = true; 
                 
 
             }
@@ -58,7 +70,16 @@ public class DLManager : MonoBehaviour
     public void NoteHit()
     {
 
-        Debug.Log("Hit On Time");
+        //Debug.Log("Hit On Time");
+
+        // Will multiply scorePerNote & currentMultiplier to currentScore for normal hit
+        currentScore += scorePerNote * currentMultiplier;
+
+        // Update Multiplier Text
+        multiText.text = "Multiplier: x" + currentMultiplier;
+        
+        // Update Score Text
+        scoreText.text = "Score: " + currentScore;
 
         if(currentMultiplier - 1 < multiplierThresholds.Length)
         {
@@ -76,18 +97,51 @@ public class DLManager : MonoBehaviour
 
         }
 
-        // Will multiply scorePerNote & currentMultiplier to currentScore for normal hit
-        currentScore += scorePerNote * currentMultiplier;
 
-        // Update Multiplier Text
-        multiText.text = "Multiplier: x" + currentMultiplier;
+
         
-        // Update Score Text
-        scoreText.text = "Score: " + currentScore;
         
 
     }
 
+    public void CPUNoteHit()
+    {
+
+        //Debug.Log("Hit On Time");
+
+        // Will multiply scorePerNote & currentMultiplier to currentScore for normal hit
+        CPUcurrentScore += scorePerNote * CPUcurrentMultiplier;
+
+        // Update Multiplier Text
+        CPUmultiText.text = "CPU Multiplier: x" + CPUcurrentMultiplier;
+        
+        // Update Score Text
+        CPUscoreText.text = "CPU Score: " + CPUcurrentScore;
+
+        if(CPUcurrentMultiplier - 1 < multiplierThresholds.Length)
+        {
+            // Adds 1 to multiplierTracker
+            CPUmultiplierTracker++;
+
+            if (multiplierThresholds[CPUcurrentMultiplier - 1] <= CPUmultiplierTracker)
+            {
+                // Sets multiplierTracker to 0 if multiplerThreshold is <= multiplerTracker
+                CPUmultiplierTracker = 0;
+                // Adds 1 to current multiplier
+                CPUcurrentMultiplier++;
+
+            }
+
+        }
+
+
+
+        
+        
+
+    }
+
+    
     /*
     public void NormalHit() 
     {
@@ -126,5 +180,21 @@ public class DLManager : MonoBehaviour
         multiText.text = "Multiplier: x" + currentMultiplier;
 
     }
+
+    public void CPUNoteMissed()
+    {
+
+        Debug.Log("Missed Note");
+
+        // Set currentMultiplier & multiplier tracker to 0 when a note is missed
+        CPUcurrentMultiplier = 1;
+        CPUmultiplierTracker = 0;
+
+        // Update Multiplier Text
+        CPUmultiText.text = "CPU Multiplier: x" + CPUcurrentMultiplier;
+
+    }
+
+
 
 }

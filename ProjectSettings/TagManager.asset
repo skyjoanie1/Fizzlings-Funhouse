@@ -16,6 +16,9 @@ TagManager:
   - SafetyGlasses
   - ScrewDriver
   - TapeMeasure
+  - CPUActivator
+  - Activator
+  - DLGM
   layers:
   - Default
   - TransparentFX

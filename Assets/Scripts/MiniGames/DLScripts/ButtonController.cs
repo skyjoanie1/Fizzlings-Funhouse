@@ -23,14 +23,14 @@ public class ButtonController : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(keyToPress) && gameObject.tag == "Activator")
         {
             // If arrow keys are pressed down the image will change to the pressed color image
             SRenderer.sprite = pressedImage;
 
         }
 
-        if (Input.GetKeyUp(keyToPress))
+        if (Input.GetKeyUp(keyToPress) && gameObject.tag == "Activator")
         {
             // If arrow keys are released the image will return to the default color image
             SRenderer.sprite = defaultImage;
