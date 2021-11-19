@@ -232,7 +232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5e36619d565740a47b127144e12bed80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d0c4ca05c394355439ba1f5f942ff722, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7dcdc1cf4cb5a964fae27fdb534089e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc33020610288164e89dba395d700a2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -612,8 +612,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49.28, y: 245.33}
-  m_SizeDelta: {x: 216.55945, y: 231.76987}
+  m_AnchoredPosition: {x: 31.29, y: 261.71}
+  m_SizeDelta: {x: 277.03207, y: 231.76987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &242024400
 MonoBehaviour:
@@ -688,7 +688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 01e27c751987bd848b6905af77e27e77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c58b0855bc473147aeffd971cc2097f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 323184888}
   - component: {fileID: 323184891}
   m_Layer: 5
-  m_Name: Zoo Button
+  m_Name: Vines Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1125,7 +1125,7 @@ GameObject:
   - component: {fileID: 614054496}
   - component: {fileID: 614054499}
   m_Layer: 5
-  m_Name: Art Gallery Button
+  m_Name: Pallete Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1147,8 +1147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 168.8, y: 396}
-  m_SizeDelta: {x: 137.142, y: 149.10626}
+  m_AnchoredPosition: {x: 149.9, y: 396}
+  m_SizeDelta: {x: 137.142, y: 186.90167}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &614054496
 MonoBehaviour:
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1dee3bd09fb9ea1479acbe0e7fcc83b9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 558caa98ade62444e9176bff26df3a4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1449,7 +1449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 927c4b58bdad05442b39d0ae8eb8e413, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4faaf96f5321fb4b9821cc32396cc9f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1718,7 +1718,7 @@ GameObject:
   - component: {fileID: 948966817}
   - component: {fileID: 948966820}
   m_Layer: 5
-  m_Name: Music Room Button
+  m_Name: Trumpet Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c1086e23f97882f4dba0d5dd77596140, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 739cba1d603b04846bcb13c520986bad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2625,7 +2625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ce3526eab89121d4492fc9a8f830d2f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cee144affd979344f939d368134e6aef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2874,7 +2874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 41e680e82576ce94eaf737e8f2e8aabd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cba3e2ed03f3aea4baf0ba3d7a4d88cf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3022,7 +3022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 900b9b35c09c51e40a552cca80309550, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b98f3d992d922f74e9dd4addb562df94, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3313,7 +3313,7 @@ GameObject:
   - component: {fileID: 1878927222}
   - component: {fileID: 1878927225}
   m_Layer: 5
-  m_Name: Library Button
+  m_Name: Book Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3335,8 +3335,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -105.06, y: 395.07}
-  m_SizeDelta: {x: 109.84451, y: 117.723145}
+  m_AnchoredPosition: {x: -77.104, y: 409.1}
+  m_SizeDelta: {x: 124.96286, y: 102.57428}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1878927222
 MonoBehaviour:
@@ -3411,7 +3411,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc8923a17bf2ff348b1f46dd4879beb8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7fc67b3642309f4a9b26f3a4e699ad4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
