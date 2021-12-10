@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragFood : MonoBehaviour
+public class TestDrag : MonoBehaviour
 {
-    public delegate void DragEndedDelgate(DragFood draggableObjects);
+    public delegate void DragEndedDelgate(TestDrag draggableObjects);
     public DragEndedDelgate dragEndedCallback;
 
     private bool isDragged = false;
@@ -30,16 +30,4 @@ public class DragFood : MonoBehaviour
         isDragged = false;
         dragEndedCallback(this);
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.transform.CompareTag("Pig"))
-        {
-
-            Destroy(gameObject);
-
-        }
-    }
-
 }
-

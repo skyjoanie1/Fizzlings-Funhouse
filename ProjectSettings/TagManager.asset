@@ -23,6 +23,7 @@ TagManager:
   - Coins
   - Point Trigger
   - Pig
+  - Horse
   layers:
   - Default
   - TransparentFX

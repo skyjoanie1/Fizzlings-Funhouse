@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Spawnfood : MonoBehaviour
 {
-   [SerializeField] Transform spawnPoint;
+    public GameObject myPrefab;
+    public Transform spawnPoint;
+ 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.CompareTag("Pig"))
-        {
-            collision.transform.position = spawnPoint.position;
+        { 
+
+            Instantiate(myPrefab, spawnPoint.position, Quaternion.identity);
+           
         }
+           
+
     }
 
 }

@@ -7,21 +7,33 @@ public class SnapFood : MonoBehaviour
     //has the snappoints in a list
     public List<Transform> snapPoints;
     //has the tools in a list
-    public List<Dragable> dragableObjects;
+   // public List<DragFood> dragableObjects;
     //the distance it needs to snap
     public float snapRange = 1f;
 
+    public List<TestDrag> dragableObject;
 
     private void Start()
     {
         //if the object is draggable
-        foreach (Dragable dragable in dragableObjects)
+       // foreach (DragFood dragFood in dragableObjects)
+        //{
+         //   dragFood.dragEndedCallback = OnDragEnded;
+       
+
+       // }
+
+        //if the object is draggable
+        foreach (TestDrag test in dragableObject)
         {
-            dragable.dragEndedCallback = OnDragEnded;
+            test.dragEndedCallback = OnDragEnded;
+
 
         }
+
     }
-    private void OnDragEnded(Dragable draggable)
+    private void OnDragEnded(TestDrag draggable)
+    //private void OnDragEnded(DragFood draggable)
     {
         float closestDistance = -1;
         Transform closestSnapPoint = null;
@@ -39,11 +51,12 @@ public class SnapFood : MonoBehaviour
                         
                         closestSnapPoint = snapPoint;
                         closestDistance = currentDistance;
+                        
                     }
                 }
-                if (snapPoint.tag == "Wrench")
+                if (snapPoint.tag == "Horse")
                 {
-                    if (draggable.tag == "Wrench")
+                    if (draggable.tag == "Horse")
                     {
                         
                         closestSnapPoint = snapPoint;
