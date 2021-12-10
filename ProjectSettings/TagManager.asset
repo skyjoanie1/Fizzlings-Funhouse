@@ -19,6 +19,10 @@ TagManager:
   - CPUActivator
   - Activator
   - DLGM
+  - Enemy
+  - Coins
+  - Point Trigger
+  - Pig
   layers:
   - Default
   - TransparentFX
