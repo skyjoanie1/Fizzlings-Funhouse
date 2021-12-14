@@ -61,6 +61,12 @@ public class MoveRooms : MonoBehaviour
         SceneManager.LoadScene("Painting Minigame");
     }
 
+    //Function called when player clicks the Matching Game Button
+    public void GoToMatchingGame()
+    {
+        SceneManager.LoadScene("Matching Game");
+    }
+
     //Function called when player clicks the Zoo Button
     public void GoToZoo()
     {
@@ -119,6 +125,18 @@ public class MoveRooms : MonoBehaviour
     public void GoToLibrary()
     {
         SceneManager.LoadScene("Library");
+    }
+
+    //Function called when player clicks the Madlibs Game Button
+    public void GoToMadlibsGame()
+    {
+        SceneManager.LoadScene("Madlibs");
+    }
+
+    //Function called when player clicks the Book Return Button
+    public void GoToBookReturnGame()
+    {
+        SceneManager.LoadScene("Book Return");
     }
 
     //Function called when player clicks the Trophy Room Button
