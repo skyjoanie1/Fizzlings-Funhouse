@@ -1854,17 +1854,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_camera: {fileID: 1618617544}
-  brush: {fileID: 5852936120913718962, guid: c66cf315ac1d0f846aafa8301a9fca61, type: 3}
-  Gbrush: {fileID: 1430374718093233332, guid: ac9d3faf51ffb4c4aa377801382c4e10, type: 3}
-  Rbrush: {fileID: 449750205852582916, guid: ebf2b1b8af5991541af2d9aab64e7d2d, type: 3}
-  Pbrush: {fileID: 4181182000635891441, guid: f20ed3130fb6eeb44af2cd894d593831, type: 3}
-  Obrush: {fileID: 8836592991108608515, guid: 1dcfa18a3068012419e7c581d6554fa3, type: 3}
-  Ybrush: {fileID: 1180993197266689617, guid: c1504b5c55157b74d87b146329cb3f3d, type: 3}
-  blubrush: {fileID: 1226791550958896953, guid: 8680d655e81665d4f8ef84748392ef29,
+  brush: {fileID: 5852936120913718962, guid: 3a1fbf2f67e3db84690e9c3eea90a800, type: 3}
+  Gbrush: {fileID: 1430374718093233332, guid: d7f9d92e6edeb1240b35d5d949f7ecc9, type: 3}
+  Rbrush: {fileID: 449750205852582916, guid: fbdcf649e8f84394ab5e580f4a4f4d41, type: 3}
+  Pbrush: {fileID: 4181182000635891441, guid: d6f27c9dd0bd75b47bc2c15e758e158a, type: 3}
+  Obrush: {fileID: 8836592991108608515, guid: d8753375492127e49b3552c46cc56dc2, type: 3}
+  Ybrush: {fileID: 1180993197266689617, guid: d727886416b9235418c7f8032a6ca816, type: 3}
+  blubrush: {fileID: 1226791550958896953, guid: 0d8a87d9e8a82154faca448d344ac6d5,
     type: 3}
-  brobrush: {fileID: 4662181273072132113, guid: e902b58b645a64041be3bb4fb2423dbd,
+  brobrush: {fileID: 4662181273072132113, guid: 1b277dc1d3a5c2c4a93dad45d104cb11,
     type: 3}
-  blabrush: {fileID: 8041419821281063803, guid: 1d5e4c34f25fc2343897a72704e470e9,
+  blabrush: {fileID: 8041419821281063803, guid: 0e1dbf9c150d10446b732ee1a688e362,
     type: 3}
   mousePos: {x: 0, y: 0, z: 0}
   redBrushActive: 0

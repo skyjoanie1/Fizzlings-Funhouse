@@ -1213,9 +1213,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1401239610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 8a98bc0f6a0563b4dbcfea8bab629fa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawningList:
+  - {fileID: 8124817439118515506, guid: a629d4c3d68608145886797164c01560, type: 3}
+  - {fileID: 5002032274445350299, guid: 87e4441acea005541b629a64e08a814d, type: 3}
+  spawnRate: 2
 --- !u!4 &1401239612
 Transform:
   m_ObjectHideFlags: 0
@@ -1446,7 +1450,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 56c03e682d66b484599ad003fed967cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78635459d9a105e4abf43397e9250b85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1483,6 +1487,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c9fbce590c9594b807b861cc82e5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 100
+  playerPoints: 0
+  healthText: {fileID: 70926318}
+  PointsText: {fileID: 1763395556}
+  speed: 0
+  rb: {fileID: 0}
 --- !u!70 &1860417782
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1576,7 +1586,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2055439954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc3f1a8a1ddea14eb68389ecd7b4fe2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9eab259c0eee62d4cb6603fb175f2ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StartScreen: {fileID: 760373454}
