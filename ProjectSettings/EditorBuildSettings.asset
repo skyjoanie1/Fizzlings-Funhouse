@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start Menu.unity
+    guid: 810a33029d1275e479a33ad1eba3eb4d
+  - enabled: 1
+    path: Assets/Scenes/Options Menu.unity
+    guid: 52b25de90c386c94eb73e90c0415ec1d
+  - enabled: 1
+    path: Assets/Scenes/Hub.unity
+    guid: ce6b05eda7c07b24a888ece37a06837a
+  - enabled: 1
+    path: Assets/Scenes/Garage.unity
+    guid: 005af50feec855f44ac39bdc426c2c9a
+  - enabled: 1
+    path: Assets/Scenes/Tool-Organizer.unity
+    guid: 829131d2a73be4345847a9e366b3b049
+  - enabled: 1
+    path: Assets/Scenes/CCScenes/CoinCollector.unity
+    guid: 83942d277f673524ba3da598f16f5154
+  - enabled: 1
+    path: Assets/Scenes/Hangar.unity
+    guid: 3c31b42eb1368bd44920a83e7dcc3668
+  - enabled: 1
+    path: Assets/Scenes/Constellations.unity
+    guid: 382e6a4a3e72abc4f8a1695e25a3bf35
+  - enabled: 1
+    path: Assets/Scenes/Galactic Diplomacy Minigame.unity
+    guid: 72dc621194bb91b43bbcb00c3c880e0a
+  - enabled: 1
+    path: Assets/Scenes/Art Gallery.unity
+    guid: 60fbd2c5f783d524ca4d44290c574337
+  - enabled: 1
+    path: Assets/Scenes/Painted World.unity
+    guid: 9e90aed5dfa6ece43af5acd3c0826b5a
+  - enabled: 1
+    path: Assets/Scenes/Painting Minigame.unity
+    guid: 3400e6becb9a4a3438d99f53296c0a4c
+  - enabled: 1
+    path: Assets/Scenes/Zoo.unity
+    guid: fbdf0c634d784b24a95e55a6cf920c4f
+  - enabled: 1
+    path: Assets/Scenes/Animal Sound Trivia.unity
+    guid: a142af6ab8ed6054e95bc5e88d1eaece
+  - enabled: 1
+    path: Assets/Scenes/Ocean Room.unity
+    guid: 680fe04b8417e0940b9c4c206a24e593
+  - enabled: 1
+    path: Assets/Scenes/Turtle Rescue.unity
+    guid: 060e5a631c1f89e488b984acd18c3737
+  - enabled: 1
+    path: Assets/Scenes/Ocean Race.unity
+    guid: e0f5e4ff825a6514e90ed545f77cd417
+  - enabled: 1
+    path: Assets/Scenes/Shark Escape Menu.unity
+    guid: 3ff67855be57dee40bd78fa51bca3210
+  - enabled: 1
+    path: Assets/Scenes/Shark Escape Easy.unity
+    guid: 32d139695370d3847a98a4d5ce8aac19
+  - enabled: 1
+    path: Assets/Scenes/Shark Escape Medium.unity
+    guid: fe93e4649f820e54b83227cc68f89b23
+  - enabled: 1
+    path: Assets/Scenes/Shark Escape Hard.unity
+    guid: ca16fbe33e086934b9c148a35648fdbe
+  - enabled: 1
+    path: Assets/Scenes/Music Room.unity
+    guid: 294e668d359f6fc4a9f68e64aac9da31
+  - enabled: 1
+    path: Assets/Scenes/DanceLegends.unity
+    guid: 44ec9bcf373b8634884707049500f6d9
+  - enabled: 1
+    path: Assets/Scenes/Music Rythym Minigame.unity
+    guid: 227ded857bd00064bb754d136ac50932
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: b8b112158df6d9445b2630c84c30bd74
+  - enabled: 1
+    path: Assets/Scenes/Trophy Room.unity
+    guid: cab3eda6b0ce48e429250205c4165034
+  m_configObjects: {}
