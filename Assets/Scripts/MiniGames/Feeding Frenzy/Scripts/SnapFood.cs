@@ -7,33 +7,24 @@ public class SnapFood : MonoBehaviour
     //has the snappoints in a list
     public List<Transform> snapPoints;
     //has the tools in a list
-   // public List<DragFood> dragableObjects;
+    public List<DragFood> dragableObjects;
     //the distance it needs to snap
     public float snapRange = 1f;
 
-    public List<TestDrag> dragableObject;
+   // public List<TestDrag> dragableObject;
 
     private void Start()
     {
         //if the object is draggable
-       // foreach (DragFood dragFood in dragableObjects)
-        //{
-         //   dragFood.dragEndedCallback = OnDragEnded;
+       foreach (DragFood dragFood in dragableObjects)
+        {
+            dragFood.dragEndedCallback = OnDragEnded;
        
 
-       // }
-
-        //if the object is draggable
-        foreach (TestDrag test in dragableObject)
-        {
-            test.dragEndedCallback = OnDragEnded;
-
-
         }
-
     }
-    private void OnDragEnded(TestDrag draggable)
-    //private void OnDragEnded(DragFood draggable)
+   // private void OnDragEnded(TestDrag draggable)
+    private void OnDragEnded(DragFood draggable)
     {
         float closestDistance = -1;
         Transform closestSnapPoint = null;
@@ -63,9 +54,9 @@ public class SnapFood : MonoBehaviour
                         closestDistance = currentDistance;
                     }
                 }
-                if (snapPoint.tag == "TapeMeasure")
+                if (snapPoint.tag == "Sheep")
                 {
-                    if (draggable.tag == "TapeMeasure")
+                    if (draggable.tag == "Sheep")
                     {
                         
                         closestSnapPoint = snapPoint;
@@ -81,33 +72,7 @@ public class SnapFood : MonoBehaviour
                         closestDistance = currentDistance;
                     }
                 }
-                if (snapPoint.tag == "DuctTape")
-                {
-                    if (draggable.tag == "DuctTape")
-                    {
-                        
-                        closestSnapPoint = snapPoint;
-                        closestDistance = currentDistance;
-                    }
-                }
-                if (snapPoint.tag == "SafetyGlasses")
-                {
-                    if (draggable.tag == "SafetyGlasses")
-                    {
-                     
-                        closestSnapPoint = snapPoint;
-                        closestDistance = currentDistance;
-                    }
-                }
-                if (snapPoint.tag == "ScrewDriver")
-                {
-                    if (draggable.tag == "ScrewDriver")
-                    {
-                       
-                        closestSnapPoint = snapPoint;
-                        closestDistance = currentDistance;
-                    }
-                }
+                
 
             }
         }

@@ -24,6 +24,12 @@ TagManager:
   - Point Trigger
   - Pig
   - Horse
+  - Sheep
+  - Cow
+  - WheatSpawn
+  - AppleSpawn
+  - CarrotSpawn
+  - Apple
   layers:
   - Default
   - TransparentFX
