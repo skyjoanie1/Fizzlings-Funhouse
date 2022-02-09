@@ -8,7 +8,6 @@ public class HealthSystem : MonoBehaviour
     public GameObject[] cowhearts;
     //number of lives. 
     public int life;
-
   
     private void Start()
     {

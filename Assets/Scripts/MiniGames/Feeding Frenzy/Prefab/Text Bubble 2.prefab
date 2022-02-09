@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2326111071546545817}
   - component: {fileID: 2502485054289879851}
   - component: {fileID: -8413593551775251387}
+  - component: {fileID: -8698178693435084751}
   m_Layer: 0
   m_Name: Text Bubble 2
-  m_TagString: Untagged
+  m_TagString: Pig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8077470605804426374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.89, y: -0.59, z: 0}
-  m_LocalScale: {x: 0.42550197, y: 0.36964837, z: 1}
+  m_LocalPosition: {x: 1.692, y: -0.756, z: 0}
+  m_LocalScale: {x: 0.24339092, y: 0.31813046, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,7 +95,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -146,3 +147,18 @@ MonoBehaviour:
   lifeTime: 5
   phearts: {fileID: 7894387931186738875, guid: 0c29cac159d616c48ae9c9ebd614b302, type: 3}
   fed: 0
+--- !u!114 &-8698178693435084751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077470605804426374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7f33f40d01abb439e86e5e8293fd41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoints: []
+  dragableObjects: []
+  snapRange: 1

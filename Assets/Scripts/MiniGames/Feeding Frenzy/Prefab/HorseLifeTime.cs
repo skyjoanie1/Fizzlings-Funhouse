@@ -2,23 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LifeTime : MonoBehaviour
-{   //how long the bubble will last
+public class HorseLifeTime : MonoBehaviour
+{
+    //how long the bubble will last
     public float lifeTime;
     //calling healthsystem script
-    public HealthSystem hearts;
-   
+    public HorseHealthSystem hHearts;
 
     public bool fed;
 
     private void Start()
     {
+        hHearts = GameObject.Find("Horse 1").GetComponent<HorseHealthSystem>();
 
-        hearts = GameObject.Find("Cow 1").GetComponent<HealthSystem>();
-     
-
-        //make a bool for feeding animals 
-        //if lifetime is less then or 
     }
 
     // Update is called once per frame
@@ -33,36 +29,40 @@ public class LifeTime : MonoBehaviour
             if (lifeTime <= 0)
             {
 
+                //lose a heart
+                //hearts.TakeDamage(1);
                 //call destory function
                 Destroyed();
             }
         }
     }
     //destory the gameobject
-    void Destroyed() {
+    void Destroyed()
+    {
         {
 
             if (fed == false)
             {
                 //lose a heart
-                hearts.TakeDamage(1);
-                
+
+                hHearts.HorseTakeDamage(1);
             }
             Destroy(gameObject);
         }
     }
-
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Cow")
+        if (collision.tag == "Horse")
         {
             fed = true;
         }
         else
         {
-            hearts.TakeDamage(1);
+            hHearts.HorseTakeDamage(1);
             fed = true;
         }
     }
+
+
 
 }

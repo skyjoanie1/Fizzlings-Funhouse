@@ -2,26 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SheepHealthSystem : MonoBehaviour
+public class HorseHealthSystem : MonoBehaviour
 {
-    public GameObject[] sheepHearts;
-    public int sLife;
+    public GameObject[] horseHearts;
+    public int hLife;
     // Start is called before the first frame update
     void Start()
     {
-        sLife = sheepHearts.Length;
+        hLife = horseHearts.Length;
     }
 
     // Update is called once per frame
 
-    public void SheepTakeDamage(int d)
+    public void HorseTakeDamage(int d)
     {
-        if (sLife >= 1)
+        if (hLife >= 1)
         {
             //subtract a heart
-            sLife -= d;
+            hLife -= d;
             //destroy a heart
-            Destroy(sheepHearts[sLife].gameObject);
+            Destroy(horseHearts[hLife].gameObject);
         }
     }
 }

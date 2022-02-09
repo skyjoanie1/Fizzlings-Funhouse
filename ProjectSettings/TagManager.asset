@@ -30,6 +30,7 @@ TagManager:
   - AppleSpawn
   - CarrotSpawn
   - Apple
+  - CabbegeSpawn
   layers:
   - Default
   - TransparentFX

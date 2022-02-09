@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: -5084273953946126583}
   - component: {fileID: -64277129588799938}
   - component: {fileID: -2460159028725249035}
+  - component: {fileID: -6305868466684759381}
   m_Layer: 0
   m_Name: Text Bubble 1
-  m_TagString: Untagged
+  m_TagString: Cow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3405863887701192945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.51, y: -0.59, z: 0}
-  m_LocalScale: {x: 0.44317886, y: 0.35551664, z: 1}
+  m_LocalPosition: {x: -1.883, y: -0.55, z: 0}
+  m_LocalScale: {x: 0.29370907, y: 0.36766383, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 46b4fa0ccedee304996bd4ebb0fff8b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 8.4, y: 6.52}
@@ -94,7 +95,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -145,5 +146,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 5
   hearts: {fileID: 6667071354568367952, guid: 209d7ab60ea9ae048ab082cdfb08f968, type: 3}
-  phearts: {fileID: 0}
   fed: 0
+--- !u!114 &-6305868466684759381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3405863887701192945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7f33f40d01abb439e86e5e8293fd41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapPoints: []
+  dragableObjects: []
+  snapRange: 1

@@ -10,15 +10,12 @@ public class PigLifeTime : MonoBehaviour
     public PigHealthSystem phearts;
 
     public bool fed;
+    
 
     private void Start()
     {
 
-        
         phearts = GameObject.Find("Pig 1").GetComponent<PigHealthSystem>();
-
-        //make a bool for feeding animals 
-        //if lifetime is less then or 
     }
 
     // Update is called once per frame
@@ -32,9 +29,6 @@ public class PigLifeTime : MonoBehaviour
             //if it reaches zero or is greater then zero do this
             if (lifeTime <= 0)
             {
-
-                //lose a heart
-                //hearts.TakeDamage(1);
                 //call destory function
                 Destroyed();
             }
@@ -44,7 +38,6 @@ public class PigLifeTime : MonoBehaviour
     void Destroyed()
     {
         {
-
             if (fed == false)
             {
                 //lose a heart
@@ -54,5 +47,19 @@ public class PigLifeTime : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+       if(collision.tag == "Pig")
+        {
+            fed = true;
+        }
+        else
+        {
+            phearts.PigTakeDamage(1);
+            fed = true;
+        }
+    }
+
 
 }

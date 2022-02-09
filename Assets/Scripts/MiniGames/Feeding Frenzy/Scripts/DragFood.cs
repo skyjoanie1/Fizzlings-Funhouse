@@ -14,8 +14,9 @@ public class DragFood : MonoBehaviour
     private Vector3 mouseDragStartPostion;
     //gets the postion of the sprite that will be dragged. 
     private Vector3 spriteDragStartPostion;
-
     //if you mouse button is clicked do this. 
+
+
     private void OnMouseDown()
     {
         //if you are dragging the object move the sprite to new location
@@ -45,9 +46,8 @@ public class DragFood : MonoBehaviour
         //if the object collides with the trigger and it matches pig destory object
         if (collision.transform.CompareTag("Pig"))
         {
-
-            Destroy(gameObject);
-
+               
+              Destroy(gameObject);
         }
 
         if (collision.transform.CompareTag("Horse"))
@@ -59,6 +59,12 @@ public class DragFood : MonoBehaviour
         if (collision.transform.CompareTag("Sheep"))
         {
 
+            Destroy(gameObject);
+
+        }
+        if (collision.transform.CompareTag("Cow"))
+        {
+          
             Destroy(gameObject);
 
         }
