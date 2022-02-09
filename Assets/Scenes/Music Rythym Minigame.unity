@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0767ea5cc2eb39b42984659cd71c8a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutMove: 0
+  tutorialMove: 0
   realMove: 0
 --- !u!1 &762821491
 GameObject:
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f690851a0edfe943ae29e85411e9371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutor: 0
+  tutorial: 0
   cord: {fileID: 613494046}
 --- !u!61 &762821493
 BoxCollider2D:
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f690851a0edfe943ae29e85411e9371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutor: 1
+  tutorial: 0
   cord: {fileID: 613494046}
 --- !u!61 &967398565
 BoxCollider2D:
@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f690851a0edfe943ae29e85411e9371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutor: 0
+  tutorial: 0
   cord: {fileID: 613494046}
 --- !u!61 &974657181
 BoxCollider2D:
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f690851a0edfe943ae29e85411e9371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutor: 0
+  tutorial: 0
   cord: {fileID: 613494046}
 --- !u!61 &1216281283
 BoxCollider2D:
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f690851a0edfe943ae29e85411e9371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutor: 0
+  tutorial: 0
   cord: {fileID: 613494046}
 --- !u!61 &1687029527
 BoxCollider2D:

@@ -19,6 +19,18 @@ TagManager:
   - CPUActivator
   - Activator
   - DLGM
+  - Enemy
+  - Coins
+  - Point Trigger
+  - Pig
+  - Horse
+  - Sheep
+  - Cow
+  - WheatSpawn
+  - AppleSpawn
+  - CarrotSpawn
+  - Apple
+  - CabbegeSpawn
   layers:
   - Default
   - TransparentFX
