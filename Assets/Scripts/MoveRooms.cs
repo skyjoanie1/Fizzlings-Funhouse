@@ -138,4 +138,25 @@ public class MoveRooms : MonoBehaviour
     {
         SceneManager.LoadScene("Hub");
     }
+
+    public void GoToFeedingFrenzy()
+    {
+        SceneManager.LoadScene("Feeding Frenxy");
+    }
+
+    public void GoToMatchingMiniGame()
+    {
+        SceneManager.LoadScene("Matching Game");
+    }
+
+    public void GoToMadlibs()
+    {
+        SceneManager.LoadScene("Madlibs");
+    }
+
+    public void GoToBookReturnGame()
+    {
+        SceneManager.LoadScene("Book Return");
+    }
+
 }

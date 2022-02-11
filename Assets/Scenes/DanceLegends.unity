@@ -900,7 +900,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 464991049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 032e47cbe8f5ccf4293bf357e4d41600, type: 3}
+  m_Script: {fileID: 11500000, guid: cecbbea2fc34fa34cb6701b6cc7375f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   theMusic: {fileID: 0}
@@ -909,13 +909,13 @@ MonoBehaviour:
   currentScore: 0
   CPUcurrentScore: 0
   scorePerNote: 100
-  scorePerGoodNote: 200
-  scorePerPerfectNote: 300
+  scorePerGoodNote: 125
+  scorePerPerfectNote: 150
   currentMultiplier: 0
   multiplierTracker: 0
   CPUcurrentMultiplier: 0
   CPUmultiplierTracker: 0
-  multiplierThresholds: 010000000300000005000000
+  multiplierThresholds: 
   scoreText: {fileID: 678155359}
   multiText: {fileID: 1899842222}
   CPUscoreText: {fileID: 407807601}

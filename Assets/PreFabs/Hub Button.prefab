@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 107917787645823919}
   - component: {fileID: 107917787645823904}
   - component: {fileID: 2499460096175906554}
+  - component: {fileID: 5322868328656548674}
   m_Layer: 0
   m_Name: Hub Button
   m_TagString: Untagged
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 823c3620b0c34f347b63250418503948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b00e51f778546a40a59cc4212d0470d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5322868328656548674}
         m_MethodName: GoToHub
         m_Mode: 1
         m_Arguments:
@@ -237,3 +238,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5322868328656548674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107917787645823906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ca52fb62a46804f910af5496a0d37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

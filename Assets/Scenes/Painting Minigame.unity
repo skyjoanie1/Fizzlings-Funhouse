@@ -1854,17 +1854,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_camera: {fileID: 1618617544}
-  brush: {fileID: 5852936120913718962, guid: c66cf315ac1d0f846aafa8301a9fca61, type: 3}
-  Gbrush: {fileID: 1430374718093233332, guid: ac9d3faf51ffb4c4aa377801382c4e10, type: 3}
-  Rbrush: {fileID: 449750205852582916, guid: ebf2b1b8af5991541af2d9aab64e7d2d, type: 3}
-  Pbrush: {fileID: 4181182000635891441, guid: f20ed3130fb6eeb44af2cd894d593831, type: 3}
-  Obrush: {fileID: 8836592991108608515, guid: 1dcfa18a3068012419e7c581d6554fa3, type: 3}
-  Ybrush: {fileID: 1180993197266689617, guid: c1504b5c55157b74d87b146329cb3f3d, type: 3}
-  blubrush: {fileID: 1226791550958896953, guid: 8680d655e81665d4f8ef84748392ef29,
+  brush: {fileID: 5852936120913718962, guid: b88749886ebab694cb473340eceaf20b, type: 3}
+  Gbrush: {fileID: 1430374718093233332, guid: 73300936717985d4fa24dbf8289d3254, type: 3}
+  Rbrush: {fileID: 449750205852582916, guid: 0cf897fa0ce178e488100e1eb4813c16, type: 3}
+  Pbrush: {fileID: 4181182000635891441, guid: 26327a79bc852f24fb0e0e53c07f9e8d, type: 3}
+  Obrush: {fileID: 8836592991108608515, guid: bbbfc7ce288dcb8429839a743ed052fd, type: 3}
+  Ybrush: {fileID: 1180993197266689617, guid: 16f85a24cab4fb44581b7ee7c59f0bb3, type: 3}
+  blubrush: {fileID: 1226791550958896953, guid: 3fc29d689b94e1e44acb17e101a4c502,
     type: 3}
-  brobrush: {fileID: 4662181273072132113, guid: e902b58b645a64041be3bb4fb2423dbd,
+  brobrush: {fileID: 4662181273072132113, guid: fd2706ee3060ccc418df3c6fde9249bb,
     type: 3}
-  blabrush: {fileID: 8041419821281063803, guid: 1d5e4c34f25fc2343897a72704e470e9,
+  blabrush: {fileID: 8041419821281063803, guid: 82420dc108cedd7469cbc363c456c0ed,
     type: 3}
   mousePos: {x: 0, y: 0, z: 0}
   redBrushActive: 0
