@@ -11,36 +11,14 @@ public class QuizManager : MonoBehaviour
 
     public Image ScenarioImage;
 
-    public GameObject CorrectText;
-    public GameObject IncorrectText;
-
     public void correct()
     {
-
-        CorrectText.SetActive(true);
-        QnA.RemoveAt(currentQuestion);
-        GenerateQuestion();
-        
-
-    }
-
-    public void Incorrect()
-    {
-
-        IncorrectText.SetActive(true);
-        QnA.RemoveAt(currentQuestion);
-        GenerateQuestion();
-        
 
     }
 
     private void Start()
     {
-
-        CorrectText.SetActive(false);
-        IncorrectText.SetActive(false);
         GenerateQuestion();
-
     }
 
     void SetAnswers()
@@ -65,15 +43,11 @@ public class QuizManager : MonoBehaviour
             ScenarioImage.sprite = QnA[currentQuestion].Questions;
             SetAnswers();
 
-            CorrectText.SetActive(false);
-            IncorrectText.SetActive(false);
             //QnA.RemoveAt(currentQuestion);
         }
         else
         {
             Debug.Log("Out of Questions");
-            CorrectText.SetActive(false);
-            IncorrectText.SetActive(false);
         }
 
 

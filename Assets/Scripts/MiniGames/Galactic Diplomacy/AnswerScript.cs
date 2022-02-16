@@ -16,7 +16,7 @@ public class AnswerScript : MonoBehaviour
         else
         {
             Debug.Log("Incorrect Answer...");
-            quizManager.Incorrect();
+            quizManager.correct();
         }
     }
 }
