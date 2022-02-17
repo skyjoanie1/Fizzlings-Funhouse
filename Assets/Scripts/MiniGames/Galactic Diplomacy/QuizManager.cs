@@ -14,6 +14,9 @@ public class QuizManager : MonoBehaviour
     public void correct()
     {
 
+        QnA.RemoveAt(currentQuestion);
+        GenerateQuestion();
+
     }
 
     private void Start()

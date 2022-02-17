@@ -738,7 +738,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 340338200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4c2a38d0f270548822d02dbbe0eca2, type: 3}
+  m_Script: {fileID: 11500000, guid: c2feb7672b6128242b6014664537d511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 0
@@ -836,7 +836,6 @@ RectTransform:
   m_Children:
   - {fileID: 1297733054}
   - {fileID: 1642004636}
-  - {fileID: 1749112371}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -997,7 +996,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 388136890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4c2a38d0f270548822d02dbbe0eca2, type: 3}
+  m_Script: {fileID: 11500000, guid: c2feb7672b6128242b6014664537d511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 0
@@ -1017,7 +1016,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &422783086
 MonoBehaviour:
@@ -1028,22 +1027,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 422783085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46a87a41a4e58e44eb2ec8f9c8965f70, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fc5b4eea1048f5438c4791532c3aed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
+  - Questions: {fileID: 21300000, guid: f5e56c40b56742f42a9c2ac6b0a3e636, type: 3}
+    Answers:
+    - Give Julius another toy
+    - "Don\u2019t give Julius Anything"
+    - Give Julius the red ball to play with
+    correctAnswer: 3
   - Questions: {fileID: 21300000, guid: 6d954b48c54dc6b4bb80e1d2033553a8, type: 3}
     Answers:
-    - Own Up to Breaking Vase
-    - Lie About Who Broke Vase
-    - Leave It Be
+    - Own up to breaking the vase
+    - Lie about who broke the vase
+    - Leave it be
     correctAnswer: 1
-  - Questions: {fileID: 21300000, guid: 063675051c8c8264ea009938490fc943, type: 3}
+  - Questions: {fileID: 21300000, guid: 0ee7c1a2398757a4b8b7580bd960271e, type: 3}
     Answers:
-    - Eat the Cheesecake
-    - Eat Fruit and Eggs
-    - Eat All Three
-    correctAnswer: 2
+    - Congratulate the winning team
+    - "Don\u2019t congratulate the winning team"
+    - Complain that she lost
+    correctAnswer: 1
   options:
   - {fileID: 993916589}
   - {fileID: 340338200}
@@ -1518,7 +1523,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 993916589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4c2a38d0f270548822d02dbbe0eca2, type: 3}
+  m_Script: {fileID: 11500000, guid: c2feb7672b6128242b6014664537d511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 0
@@ -2618,131 +2623,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
     type: 3}
   m_PrefabInstance: {fileID: 1642004635}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1749112370
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 374340784}
-    m_Modifications:
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 52.864914
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -456
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -338
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107917787645823906, guid: f9b70092a0910d14a92fe192e280891e,
-        type: 3}
-      propertyPath: m_Name
-      value: Hub Button
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f9b70092a0910d14a92fe192e280891e, type: 3}
---- !u!224 &1749112371 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 107917787645823905, guid: f9b70092a0910d14a92fe192e280891e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1749112370}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1860611151
 GameObject:

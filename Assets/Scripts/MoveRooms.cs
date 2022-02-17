@@ -172,9 +172,6 @@ public class MoveRooms : MonoBehaviour
         SceneManager.LoadScene("Madlibs");
     }
 
-    public void GoToBookReturnGame()
-    {
-        SceneManager.LoadScene("Book Return");
-    }
+
 
 }

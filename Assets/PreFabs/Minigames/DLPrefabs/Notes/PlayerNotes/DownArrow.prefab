@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBePressed: 0
-  keyToPress: 0
+  keyToPress: 274
 --- !u!58 &9178323054196131161
 CircleCollider2D:
   m_ObjectHideFlags: 0
