@@ -1,33 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class MADDragable : MonoBehaviour
+public class MADDragable : EventTrigger
 {
+
     public delegate void DragEndedDelgate(MADDragable draggableObjects);
     public DragEndedDelgate dragEndedCallback;
 
-    private bool isDragged = false;
-    private Vector3 mouseDragStartPostion;
-    private Vector3 spriteDragStartPostion;
+    private bool dragging;
 
-    private void OnMouseDown()
+    public void Update()
     {
-        isDragged = true;
-        mouseDragStartPostion = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        spriteDragStartPostion = transform.localPosition;
-    }
-    private void OnMouseDrag()
-    {
-        if (isDragged)
+        if (dragging)
         {
-            transform.localPosition = spriteDragStartPostion + (Camera.main.ScreenToWorldPoint(Input.mousePosition) - mouseDragStartPostion);
-            
+            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         }
     }
-    private void OnMouseUp()
+
+    public override void OnPointerDown(PointerEventData eventData)
     {
-        isDragged = false;
-        dragEndedCallback(this);
+        dragging = true;
     }
+
+    public override void OnPointerUp(PointerEventData eventData)
+    {
+        Debug.Log("Working");
+        dragEndedCallback(this);
+        dragging = false;
+    }
+
+
 }

@@ -23,72 +23,46 @@ public class MADSnapObjects : MonoBehaviour
     }
     private void OnDragEnded(MADDragable draggable)
     {
+        Debug.Log("Snapping");
         float closestDistance = -1;
         Transform closestSnapPoint = null;
 
         foreach (Transform snapPoint in snapPoints)
         {
            
-            float currentDistance = Vector2.Distance(draggable.transform.localPosition, snapPoint.localPosition);
+            float currentDistance = Vector2.Distance(draggable.transform.position, snapPoint.transform.position);
             if (closestSnapPoint == null || currentDistance < closestDistance)
             {
-                if (snapPoint.tag == "Hammer")
+                if (snapPoint.tag == "Nouns")
                 {
-                    if(draggable.tag == "Hammer")
+                    if(draggable.tag == "Nouns")
                     {
                     
                     closestSnapPoint = snapPoint;
                     closestDistance = currentDistance;
                     }
                 }
-                if (snapPoint.tag == "Wrench")
+                if (snapPoint.tag == "Verbs")
                 {
-                    if (draggable.tag == "Wrench")
+                    if (draggable.tag == "Verbs")
                     {
                         
                         closestSnapPoint = snapPoint;
                         closestDistance = currentDistance;
                     }
                 }
-                if (snapPoint.tag == "TapeMeasure")
+                if (snapPoint.tag == "Names")
                 {
-                    if (draggable.tag == "TapeMeasure")
+                    if (draggable.tag == "Names")
                     {
                         
                         closestSnapPoint = snapPoint;
                         closestDistance = currentDistance;
                     }
                 }
-                if (snapPoint.tag == "Flashlight")
+                if (snapPoint.tag == "Adjectives")
                 {
-                    if (draggable.tag == "Flashlight")
-                    {
-                        
-                        closestSnapPoint = snapPoint;
-                        closestDistance = currentDistance;
-                    }
-                }
-                if (snapPoint.tag == "DuctTape")
-                {
-                    if (draggable.tag == "DuctTape")
-                    {
-                        
-                        closestSnapPoint = snapPoint;
-                        closestDistance = currentDistance;
-                    }
-                }
-                if (snapPoint.tag == "SafetyGlasses")
-                {
-                    if (draggable.tag == "SafetyGlasses")
-                    {
-                        
-                        closestSnapPoint = snapPoint;
-                        closestDistance = currentDistance;
-                    }
-                }
-                if (snapPoint.tag == "ScrewDriver")
-                {
-                    if (draggable.tag == "ScrewDriver")
+                    if (draggable.tag == "Adjectives")
                     {
                         
                         closestSnapPoint = snapPoint;
@@ -96,11 +70,12 @@ public class MADSnapObjects : MonoBehaviour
                     }
                 }
                 
+                
             }
         }
         if(closestSnapPoint != null && closestDistance <= snapRange)
         {
-            draggable.transform.localPosition = closestSnapPoint.localPosition;
+            draggable.transform.position = closestSnapPoint.position;
         }
     
     }
