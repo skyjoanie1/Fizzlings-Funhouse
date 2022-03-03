@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+
 public class MADDragable : EventTrigger
 {
 
     public delegate void DragEndedDelgate(MADDragable draggableObjects);
     public DragEndedDelgate dragEndedCallback;
+
+
 
     private bool dragging;
 
@@ -20,6 +23,7 @@ public class MADDragable : EventTrigger
         }
     }
 
+    
     public override void OnPointerDown(PointerEventData eventData)
     {
         dragging = true;
