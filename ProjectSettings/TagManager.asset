@@ -31,6 +31,10 @@ TagManager:
   - CarrotSpawn
   - Apple
   - CabbegeSpawn
+  - Names
+  - Nouns
+  - Adjectives
+  - Verbs
   layers:
   - Default
   - TransparentFX
