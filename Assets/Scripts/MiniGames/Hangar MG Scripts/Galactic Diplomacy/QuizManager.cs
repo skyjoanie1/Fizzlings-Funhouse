@@ -11,13 +11,12 @@ public class QuizManager : MonoBehaviour
 
     public Image ScenarioImage;
 
-    public void correct()
-    {
+    public GameObject CorrectImage;
+    public GameObject IncorrectImage;
 
-        QnA.RemoveAt(currentQuestion);
-        GenerateQuestion();
+    public bool correctAnswer;
 
-    }
+
 
     private void Start()
     {
@@ -54,6 +53,28 @@ public class QuizManager : MonoBehaviour
         }
 
 
+
+    }
+
+    IEnumerator CorrectAnswer()
+    {
+        
+            CorrectImage.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            CorrectImage.SetActive(false);
+            QnA.RemoveAt(currentQuestion);
+            GenerateQuestion();
+
+    }
+
+    IEnumerator IncorrectAnswer()
+    {
+
+        IncorrectImage.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        IncorrectImage.SetActive(false);
+        QnA.RemoveAt(currentQuestion);
+        GenerateQuestion();
 
     }
 }

@@ -644,7 +644,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 635661492}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14ba257c6eea8d445b7888d56e352e75, type: 3}
+  m_Script: {fileID: 11500000, guid: 690b472963a4ee6408cdf3adb8eacbc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uiController: {fileID: 1166404908}
@@ -889,7 +889,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1001461404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead632ce376e12641b326f5a1946860e, type: 3}
+  m_Script: {fileID: 11500000, guid: abf6e30269ecd7c44b25b2bf15839b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   walls: {fileID: 5813515068630525245, guid: eb7347c82ebc30345b46a9b56e36e63d, type: 3}
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1166404907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6e51d1e2a29c6b48b882c644ac4b9fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 32b0e36722dcd0746b7d2139ca139462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverBackground: {fileID: 13451168}
@@ -966,6 +966,7 @@ GameObject:
   - component: {fileID: 1176112403}
   - component: {fileID: 1176112402}
   - component: {fileID: 1176112401}
+  - component: {fileID: 1176112404}
   m_Layer: 5
   m_Name: Play Again Button
   m_TagString: Untagged
@@ -1036,7 +1037,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1176112404}
         m_MethodName: GoToOceanRaceGame
         m_Mode: 1
         m_Arguments:
@@ -1084,6 +1085,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176112399}
   m_CullTransparentMesh: 0
+--- !u!114 &1176112404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176112399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ca52fb62a46804f910af5496a0d37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1181748263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1223,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1617227886}
     - target: {fileID: 107917787645823904, guid: f9b70092a0910d14a92fe192e280891e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1340,6 +1353,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1617227883}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1617227886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5322868328656548674, guid: f9b70092a0910d14a92fe192e280891e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1617227883}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617227885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ca52fb62a46804f910af5496a0d37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1826382893
 GameObject:
   m_ObjectHideFlags: 0

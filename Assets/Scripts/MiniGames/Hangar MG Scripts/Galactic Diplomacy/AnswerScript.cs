@@ -6,17 +6,19 @@ public class AnswerScript : MonoBehaviour
 {
     public bool isCorrect;
     public QuizManager quizManager;
+
+
     public void Answer()
     {
         if (isCorrect)
         {
             Debug.Log("Correct Answer!");
-            quizManager.correct();
+            quizManager.StartCoroutine("CorrectAnswer");
         }
         else
         {
             Debug.Log("Incorrect Answer...");
-            quizManager.correct();
+            quizManager.StartCoroutine("IncorrectAnswer"); ;
         }
     }
 }

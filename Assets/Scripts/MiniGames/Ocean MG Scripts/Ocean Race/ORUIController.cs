@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ORUIController : MonoBehaviour
 {
@@ -35,5 +36,12 @@ public class ORUIController : MonoBehaviour
         gameOverText.enabled = false;
         hubButton.SetActive(false);
         playAgainButton.SetActive(false);
+    }
+
+    public void RestartOR()
+    {
+
+        SceneManager.LoadScene("Ocean Race");
+
     }
 }
