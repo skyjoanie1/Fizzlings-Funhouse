@@ -91,9 +91,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7047933084361275279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ab18ad47d4af245b7a612256a99681, type: 3}
+  m_Script: {fileID: 11500000, guid: cbdc3f5c2dd8755418fc47f729686ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  pressedImage: {fileID: 0}
-  keyToPress: 0
+  defaultImage: {fileID: 21300000, guid: ad187f74f2d0cc4499f39a0267b9eda8, type: 3}
+  pressedImage: {fileID: 21300000, guid: 18bf226de2d59284e904c26430f659c9, type: 3}
+  keyToPress: 276
