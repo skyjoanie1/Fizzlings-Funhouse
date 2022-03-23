@@ -30,6 +30,9 @@ public class UiButton : MonoBehaviour
     }
     private void OnMouseUp()
     {
+
+        targetMessage = "Restart";
+
         transform.localScale = new Vector3(0.3f, 0.3f, 1.0f);
         if(targetObject != null)
         {

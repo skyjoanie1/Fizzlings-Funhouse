@@ -191,12 +191,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9833e7b176569064b84498937a6822dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a5cade7a7bf22a744b1bf3bcbcb069a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.5, y: 8}
+  m_Size: {x: 14.180254, y: 21.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -339,11 +339,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 140219199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05ce4fe460637214182a4d414cdd512b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e6eccc0587eac743b4fa0d6419203d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 2060832516}
-  targetMessage: Restart
+  targetMessage: 
   highLightColor: {r: 0, g: 1, b: 1, a: 1}
 --- !u!212 &140219202
 SpriteRenderer:
@@ -616,7 +616,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 496f6404dcfd2df459683c4213751c52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a8f84d40181f964eaae59015b009469, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1656407782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 929bc2f2ee56c1a41877d452783b6894, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ec74062792e5264c8800f8482607b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2060832518}
@@ -1056,15 +1056,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2060832516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f22d57b4a8c304387a38675f08e912, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f32baaad04ea7c47ad097cacf05dde4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   orginalCard: {fileID: 1656407785}
   images:
-  - {fileID: 21300000, guid: 416272f792e72b643ad37e7c5ec24317, type: 3}
-  - {fileID: 21300000, guid: 496f6404dcfd2df459683c4213751c52, type: 3}
-  - {fileID: 21300000, guid: 013f2f09d38220641854b864d58ff111, type: 3}
-  - {fileID: 21300000, guid: 48d76172287fe5c458918dc25d6c7641, type: 3}
-  - {fileID: 21300000, guid: eebd3ff4699cfaf4c9f2c2713648e76c, type: 3}
-  - {fileID: 21300000, guid: 8a2765dcd7e61a746b9141afede203cd, type: 3}
+  - {fileID: 21300000, guid: 18aa32e46d32e064483963eb83a877c5, type: 3}
+  - {fileID: 21300000, guid: f517d0089392a7d4ea82c51da9455c02, type: 3}
+  - {fileID: 21300000, guid: 3ff4f6f622aa1e04f88bb6f91956dc4b, type: 3}
+  - {fileID: 21300000, guid: 7a8f84d40181f964eaae59015b009469, type: 3}
+  - {fileID: 21300000, guid: 2c31750a8830e284d8e68ac9915dcc70, type: 3}
+  - {fileID: 21300000, guid: 04cbb2c66258e6747a632592d2c91343, type: 3}
   scoreLabel: {fileID: 89599168}
