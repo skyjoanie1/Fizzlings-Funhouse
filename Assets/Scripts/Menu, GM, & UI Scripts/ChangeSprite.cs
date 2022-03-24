@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class ChangeSprite : MonoBehaviour
 {
     //Game Object to modify object image
-    public GameObject objectImage;
+    public Image objectImage;
 
     //Temp Text object to change object sprite in editor
-    public Text objectSpriteText;
+   // public Text objectSpriteText;
 
     //Array to hold the different objects (by text, but will change to image)
-    public string[] objectSprites = new string[] {};
+    public Sprite[] objectSprites = new Sprite[] {};
 
     //Variable to hold the index of the array
     public int objectSpritesIndex = 0;
@@ -21,19 +21,19 @@ public class ChangeSprite : MonoBehaviour
     //Once assets are made, will change image instead
     public void ChangeImage()
     {
-        //TODO: Fix bug that doesn't change text to final item in array
+
 
         Debug.Log(objectSpritesIndex);
         objectSpritesIndex++;
 
-        if (objectSpritesIndex > objectSprites.Length - 1)
+        if (objectSpritesIndex >= objectSprites.Length)
         {
             objectSpritesIndex = 0;
-            objectSpriteText.text = objectSprites[objectSpritesIndex];
+            objectImage.sprite = objectSprites[objectSpritesIndex];
         }
-        else if (objectSpritesIndex < objectSprites.Length - 1)
+        else if (objectSpritesIndex < objectSprites.Length)
         {
-            objectSpriteText.text = objectSprites[objectSpritesIndex];
+            objectImage.sprite = objectSprites[objectSpritesIndex];
         }
 
 
