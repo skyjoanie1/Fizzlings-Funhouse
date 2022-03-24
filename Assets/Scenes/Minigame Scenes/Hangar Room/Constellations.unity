@@ -171,21 +171,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 386750425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e54cb82a1992e8d40bbd4c821be75b28, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d5d16b145b54244681ab2120a92b1fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   penCanvas: {fileID: 1314085874}
-  dotPrefab: {fileID: 6682708768448810459, guid: 8764b8682caaaff45997a32564fe5fb6,
+  dotPrefab: {fileID: 6682708768448810459, guid: bdbffbee7af36cb41aeccba116449c5a,
     type: 3}
   dotParent: {fileID: 1301531652}
-  linePrefab: {fileID: 594958779709893268, guid: e74d94913ee38c84e88a22edcdb36655,
+  linePrefab: {fileID: 594958779709893268, guid: 9d5d54222b0b6524382ac3e7244eea2e,
     type: 3}
   lineParent: {fileID: 1172088846}
   activeColor: {r: 0, g: 0, b: 0, a: 0}
   normalColor: {r: 0, g: 0, b: 0, a: 0}
   loopToggle: {fileID: 989144335}
-  loopSprite: {fileID: 21300000, guid: d53e9e0f79c021c4dafc6ac89445f264, type: 3}
-  unloopSprite: {fileID: 21300000, guid: b32f114fe7cc45346ad48d7828a46816, type: 3}
+  loopSprite: {fileID: 21300000, guid: 6f4f4301bf323204cbb22f7006b4aff4, type: 3}
+  unloopSprite: {fileID: 21300000, guid: d3dd1473cc2220b49b309411b7d6f308, type: 3}
 --- !u!114 &386750428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a79b643d9551c134581d3e44947a7788, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a6907eada0b326644ae711620a6932a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d53e9e0f79c021c4dafc6ac89445f264, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 490d1bf96e8dced43a7b23afbe887acd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -951,7 +951,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1314085870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed3e33d2827de694392c0f36e2b5e8d2, type: 3}
+  m_Script: {fileID: 11500000, guid: f292c40a976b1234483e74c18953c7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1390388713
@@ -1181,12 +1181,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1d080e3a219e7274c8bfec877392d66c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1253f50906dae641a0bfa78da45330d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 12.36}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -9,6 +9,15 @@ public class Spawnfood : MonoBehaviour
     //will spawn the food in
     public GameObject spawnPoint;
 
+
+
+    private void Start()
+    {
+
+        Instantiate(myPrefab, spawnPoint.transform.position, Quaternion.identity);
+
+    }
+
     //if you collide with the trigger do something
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -16,7 +25,7 @@ public class Spawnfood : MonoBehaviour
         if (collision.gameObject.tag == "Pig")
         {
 
-            //Debug.Log("Feed");
+            Debug.Log("Feed");
 
             Instantiate(myPrefab, spawnPoint.transform.position, Quaternion.identity);
 

@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 30329307}
   - component: {fileID: 30329306}
   - component: {fileID: 30329305}
-  - component: {fileID: 30329309}
   - component: {fileID: 30329310}
   m_Layer: 5
   m_Name: Canvas
@@ -223,19 +222,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &30329309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30329304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Mouse: {fileID: 1308301519}
 --- !u!114 &30329310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,7 +517,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 226512717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
@@ -675,7 +661,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 227799433}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
@@ -819,7 +805,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 318394320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
@@ -1228,7 +1214,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 851301057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
@@ -1450,7 +1436,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 945321911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
@@ -1850,7 +1836,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308301518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a044f02da3995e49ac9083e8a8d1beb, type: 3}
+  m_Script: {fileID: 11500000, guid: 64e2d6db9738c844cbd1d0fb6d3d8dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_camera: {fileID: 1618617544}
@@ -1940,7 +1926,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1468980412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
@@ -2167,7 +2153,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1738019326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
@@ -2389,7 +2375,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1789104581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
@@ -2533,7 +2519,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915813790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bb21b1be44f444d92f974756c2d52d, type: 3}
+  m_Script: {fileID: 11500000, guid: a14203159e76aad4785b00aac7cd26ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: {fileID: 1308301519}
