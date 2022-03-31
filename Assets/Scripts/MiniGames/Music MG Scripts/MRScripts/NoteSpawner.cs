@@ -18,7 +18,7 @@ public class NoteSpawner : MonoBehaviour
             {
                 int randomNum = Random.Range(0, 2);
                 nextSpawn = Time.time + spawnRate;
-                randX = Random.Range(-6f, 6f);
+                randX = Random.Range(-3f, 3f);
                 whereToSpawn = new Vector2(randX, transform.position.y);
                 Instantiate(spawningList[randomNum], whereToSpawn, Quaternion.identity);
             }

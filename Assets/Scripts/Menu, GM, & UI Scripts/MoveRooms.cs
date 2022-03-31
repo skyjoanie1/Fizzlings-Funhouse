@@ -112,7 +112,7 @@ public class MoveRooms : MonoBehaviour
     //Function called when the player clicks the Rhythm game button
     public void GoToRhythmGame()
     {
-        SceneManager.LoadScene("Musical Performance");
+        SceneManager.LoadScene("Music Rhythm");
     }
 
     //Function called when the player clicks the Dance Legends game button

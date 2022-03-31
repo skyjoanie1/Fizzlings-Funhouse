@@ -12,6 +12,8 @@ public class BREnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        
         
     }
 
@@ -23,7 +25,7 @@ public class BREnemySpawner : MonoBehaviour
 
         if (Time.time > nextSpawn)
         {
-
+            spawnRate = Random.Range(5f, 12f);
             nextSpawn = Time.time + spawnRate;
             Instantiate(spawningList[0], transform.position, Quaternion.identity);
 

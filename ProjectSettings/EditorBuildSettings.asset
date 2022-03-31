@@ -17,39 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rooms/Garage.unity
     guid: 005af50feec855f44ac39bdc426c2c9a
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Garage Room/Tool-Organizer.unity
     guid: 49ecc39f4fff3c848a000ddd0af32c4d
   - enabled: 1
     path: Assets/Scenes/Rooms/Hangar.unity
     guid: 3c31b42eb1368bd44920a83e7dcc3668
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Garage Room/CoinCollector.unity
     guid: eff6c6e014b6f604da887907680a25fe
@@ -59,9 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rooms/Art Gallery.unity
     guid: 60fbd2c5f783d524ca4d44290c574337
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Minigame Scenes/Music Room/Music Rhythm.unity
+    guid: 92f373d073434a3469b864dcdc9b13d4
   - enabled: 1
     path: Assets/Scenes/Rooms/Painted World.unity
     guid: 9e90aed5dfa6ece43af5acd3c0826b5a
@@ -80,7 +53,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Minigame Scenes/Ocean Room/Turtle Rescue.unity
     guid: 060e5a631c1f89e488b984acd18c3737
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Ocean Room/Ocean Race.unity
     guid: e0f5e4ff825a6514e90ed545f77cd417
   - enabled: 0
@@ -102,17 +75,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigame Scenes/Music Room/DanceLegends.unity
     guid: 44ec9bcf373b8634884707049500f6d9
   - enabled: 1
-    path: Assets/Scenes/Minigame Scenes/Music Room/Music Rythym Minigame.unity
-    guid: 227ded857bd00064bb754d136ac50932
-  - enabled: 1
     path: Assets/Scenes/Rooms/Library.unity
     guid: b8b112158df6d9445b2630c84c30bd74
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Rooms/Trophy Room.unity
     guid: cab3eda6b0ce48e429250205c4165034
