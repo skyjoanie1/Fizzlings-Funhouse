@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         marabelle = transform.GetComponent<Rigidbody2D>();
         dead = false;
     }
@@ -37,11 +38,15 @@ public class PlayerController : MonoBehaviour
             marabelle.velocity = new Vector2(0, 8.5f);
         }
 
+        /*
         //Restart the game when the user presses 'r'
         if (Input.GetKeyDown("r"))
         {
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         }
+
+    */
+
     }
 
     //Check for collisions

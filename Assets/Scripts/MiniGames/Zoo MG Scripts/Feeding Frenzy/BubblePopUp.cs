@@ -17,6 +17,7 @@ public class BubblePopUp : MonoBehaviour
 
     void Start()
     {
+        spawnDelay = Random.Range(10f, 15f) + spawnTime;
         //will keep calling the function to spawn the time and how long to wait to spawn again. 
         InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
        
@@ -26,6 +27,8 @@ public class BubblePopUp : MonoBehaviour
     {
         //create the object and spawn it in game
         Instantiate(spawnee, transform.position, transform.rotation);
+
+
         //if there is a object curretly spawned then stop spawning. 
         if (stopSpawning)
         {

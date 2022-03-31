@@ -154,6 +154,7 @@ public class MoveRooms : MonoBehaviour
     //Function called when player clicks the Hub Button
     public void GoToHub()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Hub");
     }
 

@@ -38,10 +38,4 @@ public class ORUIController : MonoBehaviour
         playAgainButton.SetActive(false);
     }
 
-    public void RestartOR()
-    {
-
-        SceneManager.LoadScene("Ocean Race");
-
-    }
 }
