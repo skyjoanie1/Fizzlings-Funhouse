@@ -56,16 +56,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Ocean Room/Ocean Race.unity
     guid: e0f5e4ff825a6514e90ed545f77cd417
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Ocean Room/Shark Escape Menu.unity
     guid: 3ff67855be57dee40bd78fa51bca3210
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Ocean Room/Shark Escape Easy.unity
     guid: 32d139695370d3847a98a4d5ce8aac19
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Ocean Room/Shark Escape Medium.unity
     guid: fe93e4649f820e54b83227cc68f89b23
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Ocean Room/Shark Escape Hard.unity
     guid: ca16fbe33e086934b9c148a35648fdbe
   - enabled: 1
