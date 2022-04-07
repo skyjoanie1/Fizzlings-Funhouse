@@ -10,9 +10,12 @@ public class TurtleBullet : MonoBehaviour
     //Variable to handle the turtle's movement speed
     public float turtleSpeed = 5.0f;
 
+    public TRManager TRGM;
+
     // Start is called before the first frame update
     void Start()
     {
+        TRGM = FindObjectOfType<TRManager>();
         tf = gameObject.GetComponent<Transform>();
     }
 
@@ -24,7 +27,7 @@ public class TurtleBullet : MonoBehaviour
 
         if (tf.position.x <= -16)
         {
-            GameManager.Instance.turtleRescuePoints++;
+            TRGM.pointsTurtles++;
             Destroy(this.gameObject);
         }
     }

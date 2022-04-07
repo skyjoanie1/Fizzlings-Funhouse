@@ -50,7 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rooms/Ocean Room.unity
     guid: 680fe04b8417e0940b9c4c206a24e593
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Ocean Room/Turtle Rescue.unity
     guid: 060e5a631c1f89e488b984acd18c3737
   - enabled: 1

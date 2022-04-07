@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
+    
     //Create variable to hold the instance of the singleton
     private static T instance;
 

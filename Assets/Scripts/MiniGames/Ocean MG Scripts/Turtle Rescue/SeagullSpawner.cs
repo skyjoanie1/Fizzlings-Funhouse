@@ -6,29 +6,28 @@ public class SeagullSpawner : MonoBehaviour
 {
     //Variable reference to the seagull prefab
     public GameObject seagullPrefab;
+    float randXPos;
+    public Vector3 whereToSpawnSeagull;
+    public float spawnRate = 2f;
+    float nextSpawn = 0.0f;
 
-    //Array to access the seagull spawner game objects
-    public GameObject[] seagullSpawners = new GameObject[] { };
-
-    //Variable to handle the index of spawners array
-    public int seagullSpawnersIndex = 0;
 
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Instance.numSeagulls < 2)
+
+        //Function to spawn the seagulls
+        if (Time.time > nextSpawn)
         {
-            SpawnSeagull();
+            int randomNum = Random.Range(0, 2);
+            nextSpawn = Time.time + spawnRate;
+            randXPos = Random.Range(-14f, 10f);
+            whereToSpawnSeagull = new Vector3(randXPos, transform.position.y, -2);
+            Instantiate(seagullPrefab, whereToSpawnSeagull, Quaternion.identity);
+
+
         }
     }
 
-    //Function to spawn the seagulls
-    public void SpawnSeagull()
-    {
-        int randSpawnPoint = Random.Range(0, seagullSpawners.Length);
-
-        Instantiate(seagullPrefab, seagullSpawners[randSpawnPoint].transform.position, transform.rotation);
-
-        GameManager.Instance.numSeagulls++;
-    }
+   
 }

@@ -24,7 +24,7 @@ public class Seagull : MonoBehaviour
 
         if (tf.position.y <= -13)
         {
-            GameManager.Instance.numSeagulls--;
+
 
             Destroy(this.gameObject);            
         }
