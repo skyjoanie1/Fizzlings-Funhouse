@@ -34,6 +34,12 @@ public class testDraw : MonoBehaviour
     public bool blackBrushActive;
     public bool Selecting;
 
+    // Gets Color Selector from Canvas
+    public GameObject ColorPallet;
+    // Gets Painting Canvas
+    public GameObject PalletButton;
+    public bool canDraw;
+
 
   //will create the brush allowing you to draw
     public void CreateBrush()
@@ -79,6 +85,7 @@ public class testDraw : MonoBehaviour
             mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
             currentLineRenderer.SetPosition(0, mousePos);
             currentLineRenderer.SetPosition(1, mousePos);
+            
         }
         // if the purple brush is selected start drawing 
          if (purpleBrushActive == true)
@@ -182,38 +189,84 @@ public class testDraw : MonoBehaviour
     public void GreenBrush()
     {
             greenBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
     }
     public void RedBrush()
     {
+        
         redBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
+
     }
     public void PurpleBrush()
     {
         purpleBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
     }
     public void WhiteBrush()
     {
         whiteBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
     }
     public void OrangeBrush()
     {
         orangeBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
     }
     public void YellowBrush()
     {
         yellowBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
     }
     public void BlueBrush()
     {
         blueBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
     }
     public void BrownBrush()
     {
         brownBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
     }
     public void BlackBrush()
     {
         blackBrushActive = true;
+        // Hides ColorPallet GameObject
+        ColorPallet.SetActive(false);
+        Selecting = false;
+    }
+
+    public void ShowColorSelect()
+    {
+
+        ColorPallet.SetActive(true);
+        Selecting = true;
+        redBrushActive = false;
+        greenBrushActive = false;
+        purpleBrushActive = false;
+        whiteBrushActive = false;
+        orangeBrushActive = false;
+        yellowBrushActive = false;
+        blueBrushActive = false;
+        brownBrushActive = false;
+        blackBrushActive = false;
+
     }
 
     // it will get the point of the mouse and when you click on the screen create the line
@@ -229,12 +282,32 @@ public class testDraw : MonoBehaviour
     private void Update()
     {
         //will only draw if you press the mosue button
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButton(0) && canDraw != false)
         {
             
             Draw();
         }
+
+        if(mousePos.x > -4.5 && mousePos.x < 6.45 && mousePos.y < 4.8 && mousePos.y > -3.4)
+        {
+
+            canDraw = true;
+
+        } else if (mousePos.x < -4.5 || mousePos.x > 6.45 || mousePos.y > 4.8 || mousePos.y < -3.4)
+        {
+
+            canDraw = false;
+
+        }
+
+        
+
+
+        mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+
     }
 
     
+ 
+
 }
