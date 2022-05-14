@@ -173,6 +173,12 @@ public class MoveRooms : MonoBehaviour
         SceneManager.LoadScene("Madlibs");
     }
 
+    //Function called when player clicks the Library Organizer Button
+    public void GoToLibraryOrgGame()
+    {
+        SceneManager.LoadScene("LibaryOrganizer");
+    }
+
 
 
 }

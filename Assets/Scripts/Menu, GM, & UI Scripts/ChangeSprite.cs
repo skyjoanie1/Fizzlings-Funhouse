@@ -8,9 +8,6 @@ public class ChangeSprite : MonoBehaviour
     //Game Object to modify object image
     public Image objectImage;
 
-    //Temp Text object to change object sprite in editor
-   // public Text objectSpriteText;
-
     //Array to hold the different objects (by text, but will change to image)
     public Sprite[] objectSprites = new Sprite[] {};
 

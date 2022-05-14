@@ -95,4 +95,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigame Scenes/Library Room/Madlibs.unity
     guid: aade0e15c8b764843be6e8379266d989
+  - enabled: 1
+    path: Assets/Scenes/Minigame Scenes/Library Room/LibaryOrganizer.unity
+    guid: 35405ce77a8fbc54da8a9b852b7fdebc
   m_configObjects: {}

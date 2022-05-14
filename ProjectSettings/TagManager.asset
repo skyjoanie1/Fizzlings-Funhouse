@@ -35,6 +35,7 @@ TagManager:
   - Nouns
   - Adjectives
   - Verbs
+  - BrushPaint
   layers:
   - Default
   - TransparentFX

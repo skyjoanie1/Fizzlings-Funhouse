@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2682746446057047874}
   m_Layer: 0
   m_Name: Gbrush
-  m_TagString: Untagged
+  m_TagString: BrushPaint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

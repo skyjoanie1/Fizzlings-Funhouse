@@ -132,6 +132,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbleTimer: 5
-  textBubble: {fileID: 4650511043063891430, guid: f5a56dd62b1a5e1499ad3f732d7dfc8a,
-    type: 3}
-  audioClip: {fileID: 8300000, guid: c57f102bd61eb484897120141e2a818f, type: 3}
+  textBubble: {fileID: 0}
+  audioClip: {fileID: 0}
